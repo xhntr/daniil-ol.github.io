@@ -7,42 +7,82 @@
 
 <style>
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    background: #0f172a;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
     color: white;
 }
 
 header {
-    padding: 60px 20px;
     text-align: center;
-    background: #020617;
+    padding: 80px 20px;
 }
 
 h1 {
-    font-size: 42px;
+    font-size: 48px;
     margin-bottom: 10px;
 }
 
+.subtitle {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
 .container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     padding: 40px 20px;
 }
 
+.section {
+    margin-bottom: 60px;
+}
+
 .card {
-    background: #111827;
-    padding: 20px;
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 14px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: rgba(255,255,255,0.08);
+}
+
+h2 {
     margin-bottom: 20px;
-    border-radius: 12px;
+    font-size: 26px;
 }
 
-a {
-    color: #38bdf8;
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    background: #38bdf8;
+    color: black;
     text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-.footer {
+.button:hover {
+    background: #0ea5e9;
+}
+
+.skills span {
+    display: inline-block;
+    background: rgba(255,255,255,0.1);
+    padding: 8px 14px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+footer {
     text-align: center;
     padding: 40px;
     opacity: 0.6;
@@ -54,44 +94,72 @@ a {
 
 <header>
     <h1>Daniil Oliinyk</h1>
-    <p>IT-Ausbildung gesucht (Softwareentwicklung / IT)</p>
+    <div class="subtitle">
+        Angehender Fachinformatiker – Ausbildung im IT-Bereich gesucht
+    </div>
 </header>
 
 <div class="container">
 
-<div class="card">
+<div class="section">
 <h2>Über mich</h2>
+<div class="card">
 <p>
-Ich interessiere mich seit mehreren Jahren für Programmierung und entwickle eigene Projekte in Lua und Python.
-Mein Ziel ist eine Ausbildung im IT-Bereich, um praktische Erfahrung zu sammeln und mich als Entwickler weiterzuentwickeln.
+Ich interessiere mich seit mehreren Jahren für Softwareentwicklung und arbeite aktiv an eigenen Projekten in Lua und Python. 
+Mein Ziel ist eine Ausbildung im IT-Bereich, um meine technischen Fähigkeiten professionell weiterzuentwickeln und praktische Erfahrung im Team zu sammeln.
 </p>
 </div>
+</div>
 
-<div class="card">
+<div class="section">
 <h2>Projekte</h2>
 
-<p><b>Lua – Assetto Corsa</b><br>
-Skripte, Logiksysteme und Fahrzeugfunktionen.</p>
-
-<p><b>Python Tools</b><br>
-Kleine Automatisierungsprogramme.</p>
-
-<p><b>Webprojekt</b><br>
-HTML & JavaScript.</p>
-
+<div class="card">
+<b>Lua – Assetto Corsa Projekte</b>
+<p>Entwicklung von Skripten, Logiksystemen und interaktiven Fahrzeugfunktionen.</p>
+<a href="https://github.com/xhntr" target="_blank" class="button">Auf GitHub ansehen</a>
 </div>
 
 <div class="card">
+<b>Python Tools</b>
+<p>Kleine Automatisierungsprogramme und Tools zur Datenverarbeitung.</p>
+</div>
+
+<div class="card">
+<b>Webprojekt</b>
+<p>Entwicklung einer einfachen Webanwendung mit HTML und JavaScript.</p>
+<a href="https://github.com/xhntr" target="_blank" class="button">Auf GitHub ansehen</a>
+</div>
+
+</div>
+
+<div class="section">
+<h2>Technische Skills</h2>
+<div class="skills">
+<span>Lua</span>
+<span>Python</span>
+<span>Java</span>
+<span>SQL</span>
+<span>HTML</span>
+<span>JavaScript</span>
+<span>Git</span>
+<span>GitHub</span>
+</div>
+</div>
+
+<div class="section">
 <h2>Kontakt</h2>
+<div class="card">
 <p>Email: daniiloleynik4444@gmail.com</p>
-<p>GitHub: <a href="https://github.com/xhntr">github.com/xhntr</a></p>
+<p>GitHub: <a href="https://github.com/xhntr" target="_blank" style="color:#38bdf8;">github.com/xhntr</a></p>
+</div>
 </div>
 
 </div>
 
-<div class="footer">
-<p>© Daniil Oliinyk</p>
-</div>
+<footer>
+© 2026 Daniil Oliinyk
+</footer>
 
 </body>
 </html>
